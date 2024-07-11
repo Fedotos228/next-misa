@@ -1,4 +1,4 @@
-import Hero from '@/components/blocks/Hero/Hero'
+import Hero from '@/components/blocks/Hero'
 
 export default function Home() {
   return (
