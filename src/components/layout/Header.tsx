@@ -13,7 +13,7 @@ export default function Header() {
             height={70}
           />
           <button className='gradient grandient-text'>
-            Let's Talk
+            Lets Talk
           </button>
         </div>
       </Container>
