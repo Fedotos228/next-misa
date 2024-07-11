@@ -33,6 +33,8 @@
       --ring: 222.2 84% 4.9%;
 
       --radius: 0.5rem;
+
+      --gradient: 90deg, #33BAFA 0%, #4B9CFF 54.29%, #4B79FE 100%
     }
 
     .dark {
@@ -73,4 +75,36 @@
     body {
       @apply bg-background text-foreground;
     }
+
+    h3{
+      @apply text-[#0E153A] text-4xl mb-5
+    }
+
+
+    .gradient {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: white;
+      border: 2px solid;
+      border-image: linear-gradient(90deg, #33BAFA 0%, #4B9CFF 54.29%, #4B79FE 100%);
+      border-image-slice: 1;
+      transition: .3s;
+    }
+    .gradient:hover {
+      background: linear-gradient(90deg, #33BAFA 0%, #4B9CFF 54.29%, #4B79FE 100%);
+      color: white;
+    }
+
+    .grandient-text{
+      background: linear-gradient(var(--gradient));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .who {
+      background: linear-gradient(90deg, #33BAFA 0%, #4B9CFF 54.29%, #4B79FE 100%);
+
+    }
   }
+

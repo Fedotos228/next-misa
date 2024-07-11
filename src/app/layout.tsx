@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 
+import Header from '@/components/layout/Header'
 import { cn } from '@/lib/utils'
-import { Inter as FontSans } from "next/font/google"
+import { Lexend as FontSans } from "next/font/google"
 import "./globals.css"
 
 
@@ -27,7 +28,10 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
-      >{children}</body>
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

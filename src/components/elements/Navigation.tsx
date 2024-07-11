@@ -23,15 +23,13 @@ export default function Navigation() {
   return (
     <div>
       <ul>
-        {
-          nav.map((item: INav) => (
-            <li key={item.href}>
-              <button>
-                {item.label}
-              </button>
-            </li>
-          ))
-        }
+        {nav.map((item: INav) => (
+          <li key={item.href}>
+            <button>
+              {item.label}
+            </button>
+          </li>
+        ))}
       </ul>
     </div>
   )
