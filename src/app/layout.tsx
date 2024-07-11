@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 
+import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
 import { cn } from '@/lib/utils'
 import { Lexend as FontSans } from "next/font/google"
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
