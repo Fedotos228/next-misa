@@ -1,6 +1,10 @@
-import React from 'react'
 
-const nav = [
+interface INav {
+  href: string
+  label: string
+}
+
+const nav: INav[] = [
   {
     href: '#home',
     label: 'Home'
@@ -19,8 +23,15 @@ export default function Navigation() {
   return (
     <div>
       <ul>
-        .
-        <li></li>
+        {
+          nav.map((item: INav) => (
+            <li key={item.href}>
+              <button>
+                {item.label}
+              </button>
+            </li>
+          ))
+        }
       </ul>
     </div>
   )
